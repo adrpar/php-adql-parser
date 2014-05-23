@@ -1,0 +1,1 @@
+SELECT * FROM ppmxl.main WHERE NOT EXISTS (SELECT * FROM dmubin.main as d WHERE 1 = CONTAINS(POINT('',d.raj2000,d.dej2000),CIRCLE('',q.raj2000,q.dej2000,0.001)))

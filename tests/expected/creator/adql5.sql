@@ -1,0 +1,1 @@
+SELECT TOP 10 POWER(10,alfa_Fe) as ppress, SQRT(SQUARE(e_pmde) + SQUARE(e_pmra)) as errTot FROM rave.main WHERE obsDate > '2005-02-02' AND imag < 12 AND ABS(rv) > 100 ORDER BY ppress ASC

@@ -1,0 +1,1 @@
+SELECT TOP 5 rv, e_rv, p.raj2000, p.dej2000, p.pmRA, p.pmDE FROM ppmxl.main as p INNER JOIN rave.main as rave ON 1 = CONTAINS(POINT('',rave.raj2000,rave.dej2000),CIRCLE('',p.raj2000,p.dej2000,1.5 / 3600.))

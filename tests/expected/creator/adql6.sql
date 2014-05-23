@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM (SELECT TOP 4000 * FROM arigfh.id) as q WHERE 4 = MOD(decflags / 10000,10)

@@ -1,0 +1,1 @@
+SELECT DISTINCT TOP(@a + 5) * FROM foo
